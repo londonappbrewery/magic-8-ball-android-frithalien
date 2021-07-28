@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button shakeButton;
         shakeButton = (Button) findViewById(R.id.shake_button);
-        ImageView ballImage = (ImageView) findViewById(R.id.ball_image);
-        int [] magicImage = {
+        final ImageView ballImage;
+        ballImage = (ImageView) findViewById(R.id.ball_image);
+        final int [] magicImage = {
                 R.drawable.ball1,
                 R.drawable.ball2,
                 R.drawable.ball3,
