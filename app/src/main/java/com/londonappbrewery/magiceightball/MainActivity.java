@@ -27,15 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
         };
 
-        shakeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("Magic-8","Shake Shake Shake!");
-                Random randomNumber = new Random();
+        shakeButton.setOnClickListener(view -> {
+            Log.d("Magic-8","Shake Shake Shake!");
+            Random randomNumber = new Random();
 
-                int number = randomNumber.nextInt(4);
-                ballImage.setImageResource(magicImage[number]);
-            }
+            int number = randomNumber.nextInt(4);
+            ballImage.setImageResource(magicImage[number]);
         });
 
 
